@@ -273,7 +273,12 @@ body {
 	display: none;
 }
 .projboxcontainer:hover .projbox:before{
-	font-size:2vh;
+	@media only screen and (orientation: landscape) {
+		font-size:2vh;
+	}
+	@media only screen and (orientation: portrait) {
+		font-size:3vw;
+	}
 	text-align: center;
 }
 .projboxcontainer:hover .p1:before{
@@ -311,8 +316,17 @@ body {
 	transition-duration: 0.25s;
 }
 .heading{
-	padding:5vh;
-	font-size: 5vh;
+	@media only screen and (orientation: landscape) {
+		padding:5vh;
+		font-size: 5vh;
+	}
+	@media only screen and (orientation: portrait){
+		padding-left: 5vh;
+		padding-right: 5vh;
+		padding-top: 9vh;
+		padding-bottom: 1vh;
+		font-size: 5vh;
+	}
 }
 .text{
 	padding:4vmin;
