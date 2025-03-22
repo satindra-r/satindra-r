@@ -183,7 +183,7 @@ body {
 	}
 }
 .javapic{
-	filter: drop-shadow(0.5vh 0.5vh 0.5vh #2d75ba);
+	filter: drop-shadow(1vh 1vh 1vh #2d75ba);
 }
 .pypic{
 	filter: drop-shadow(1vh 1vh 1vh #ffe777);
