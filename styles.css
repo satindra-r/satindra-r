@@ -344,3 +344,30 @@ body {
 .link{
 	color:#2d75ba;
 }
+.icogrid{
+	@media only screen and (orientation: landscape) {
+		display:flex;
+		justify-content: space-around;	
+		padding:5vw;
+	}
+	@media only screen and (orientation: portrait) {
+		display: grid;
+		grid-template-rows:20vw 20vw;
+		grid-template-columns:20vw 20vw;
+		grid-row-gap:20vw;
+		grid-column-gap:20vw;
+		padding-right:20vw;
+		padding-left:20vw;
+		padding-top:10vw;
+	}
+}
+.icogrid > a > img{
+	@media only screen and (orientation: landscape) {
+		width:10vmin;
+		height:10vmin;
+	}
+	@media only screen and (orientation: portrait) {
+		width:20vw;
+		height:20vw;
+	}
+}
