@@ -115,7 +115,7 @@ body {
 	}
 	perspective:100vw;
 }
-.expboxpic{
+.expboxpicbg{
 	position:relative;
 	@media only screen and (orientation: landscape) {
 		width: 15vh;
@@ -129,6 +129,18 @@ body {
 	background-color:#171717;
 	transform:translateZ(0vmin);
 	transition-duration:1.5s;
+}
+.expboxpic{
+	position:relative;
+	@media only screen and (orientation: landscape) {
+		width: 15vh;
+		height: 15vh;
+	}
+	@media only screen and (orientation: portrait) {
+		width: 30vw;
+		height: 30vw;
+	}
+	z-index:1;
 }
 .textbox{
 	position:relative;
@@ -232,13 +244,16 @@ body {
 	padding:2vw;
 	transform-origin:center;
 	filter: drop-shadow(1vh 1vh 1vh black);
+	transition-duration: 0.25s;
 }
 .projbox:hover{
 	z-index:1;
 	transform:scale(1.1);
+	transition-duration: 0.25s;
 }
 .projbox:active{
 	transform:scale(0.9);
+	transition-duration: 0.25s;
 }
 .heading{
 	padding:5vh;
