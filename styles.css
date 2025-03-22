@@ -141,6 +141,7 @@ body {
 		height: 30vw;
 	}
 	z-index:1;
+	transition-duration:1.5s;
 }
 .textbox{
 	position:relative;
