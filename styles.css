@@ -306,7 +306,7 @@ body {
 .projboxcontainer:hover .p10:before{
 	content:"Website made in only HTML and CSS";
 }
-.projbox:active{
+.projboxcontainer:active .projbox{
 	transform:scale(0.9);
 	transition-duration: 0.25s;
 }
