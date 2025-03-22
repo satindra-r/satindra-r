@@ -194,16 +194,16 @@ body {
 		width:44vw;
 	}
 }
-.javapic{
+.expbox:hover .javapic{
 	filter: drop-shadow(1vh 1vh 1vh #2d75ba);
 }
-.pypic{
+.expbox:hover  .pypic{
 	filter: drop-shadow(1vh 1vh 1vh #ffe777);
 }
-.cspic{
+.expbox:hover  .cspic{
 	filter: drop-shadow(1vh 1vh 1vh #a179dc);
 }
-.cpppic{
+.expbox:hover  .cpppic{
 	filter: drop-shadow(1vh 1vh 1vh #5c8ebd);
 }
 .dblprojbox{
