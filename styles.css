@@ -225,12 +225,30 @@ body {
 	justify-content:space-evenly;
 
 }
+.projboxcontainer{
+	display:flex;
+	position:relative;
+	align-self: center;
+	@media only screen and (orientation: landscape) {
+		height:calc(5vh+4vw);
+		width: 19vw;
+	}
+	@media only screen and (orientation: portrait) {
+		height:calc(5vh+4vw);
+		width:44vw;
+	}
+	font-size:2.5vh;
+	align-items: center;
+	justify-content: center;
+	transform-origin:center;
+	transition-duration: 0.25s;
+}
 .projbox{
 	display:flex;
 	position:relative;
 	align-self: center;
-	background-image: linear-gradient(#101010 0%,#1c1c1c 50%,#101010  100%);
 	text-decoration: none;	
+	background-image: linear-gradient(#101010 0%,#1c1c1c 50%,#101010  100%);
 	@media only screen and (orientation: landscape) {
 		height:5vh;
 		width: 15vw;
@@ -239,18 +257,54 @@ body {
 		height:5vh;
 		width:40vw;
 	}
+	padding:2vw;
+	filter: drop-shadow(1vh 1vh 1vh black);
 	font-size:2.5vh;
 	align-items: center;
 	justify-content: center;
-	padding:2vw;
-	transform-origin:center;
-	filter: drop-shadow(1vh 1vh 1vh black);
 	transition-duration: 0.25s;
 }
-.projbox:hover{
+.projboxcontainer:hover .projbox{
+	transform: rotateX(360deg);
 	z-index:1;
-	transform:scale(1.1);
 	transition-duration: 0.25s;
+}
+.projboxcontainer:hover .projbox span{
+	display: none;
+}
+.projboxcontainer:hover .projbox:before{
+	font-size:2vh;
+	text-align: center;
+}
+.projboxcontainer:hover .p1:before{
+	content:"Fractal generation by chaos game";
+}
+.projboxcontainer:hover .p2:before{
+	content:"An esolang where all code is in the form of ipv6 adresses";
+}
+.projboxcontainer:hover .p3:before{
+	content:"Bouncing DVD animation that only hits the corner when you are not looking";
+}
+.projboxcontainer:hover .p4:before{
+	content:"Image to braille art converter";
+}
+.projboxcontainer:hover .p5:before{
+	content:"Particle based two fluid mixing simulator";
+}
+.projboxcontainer:hover .p6:before{
+	content:"Firefly blinking synchronisation simulator";
+}
+.projboxcontainer:hover .p7:before{
+	content:"Neuron-like animation";
+}
+.projboxcontainer:hover .p8:before{
+	content:"Iterative Sorting algorithm simulator";
+}
+.projboxcontainer:hover .p9:before{
+	content:"Real time photo sharing app";
+}
+.projboxcontainer:hover .p10:before{
+	content:"Website made in only HTML and CSS";
 }
 .projbox:active{
 	transform:scale(0.9);
