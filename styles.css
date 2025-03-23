@@ -45,7 +45,7 @@ body {
 	@media only screen and (orientation: portrait) {
 		width:100vw;
 	}
-	filter: drop-shadow(0vh var(shadowdepth) var(shadowdepth) black);
+	filter: drop-shadow(0vh var(--shadowdepth) var(--shadowdepth) black);
 }
 .pane:nth-child(5){
 	@media only screen and (orientation: landscape) {
